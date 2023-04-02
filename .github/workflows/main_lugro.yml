@@ -3,6 +3,9 @@
 
 name: Build and deploy Node.js app to Azure Web App - Lugro
 
+env:
+  DATABASE_URL: '${{ secrets.ENV }}'
+
 on:
   push:
     branches:
