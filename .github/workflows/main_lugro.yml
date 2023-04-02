@@ -2,6 +2,8 @@
 # More GitHub Actions for Azure: https://github.com/Azure/actions
 
 name: Build and deploy Node.js app to Azure Web App - lugro
+env:
+  DATABASE_URL: mysql://oulrdefr6xrpbmsub453:pscale_pw_j1mBL1enJwfGLpVNGinNjetP0dqR1qt0rmyvmWt8Y53@aws.connect.psdb.cloud/azappla?sslaccept=strict'
 
 on:
   push:
@@ -52,5 +54,5 @@ jobs:
         with:
           app-name: 'lugro'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_E83204EEE719464ABF1A04D1D2843DD0 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_1F9C755738EB4A72B036B026C7642982 }}
           package: .
