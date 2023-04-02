@@ -7,7 +7,7 @@
     "dev": "next dev",
     "postinstall": "prisma generate",
     "lint": "next lint",
-    "start": "node server.js"
+    "start": "/home/site/wwwroot/node_modules/next/dist/bin/next"
   },
   "dependencies": {
     "@prisma/client": "^4.11.0",
