@@ -3,9 +3,6 @@
 
 name: Build and deploy Node.js app to Azure Web App - lugro
 
-env:
-  DATABASE_URL: mysql://oulrdefr6xrpbmsub453:pscale_pw_j1mBL1enJwfGLpVNGinNjetP0dqR1qt0rmyvmWt8Y53@aws.connect.psdb.cloud/azappla?sslaccept=strict'
-
 on:
   push:
     branches:
