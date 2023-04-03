@@ -1,7 +1,7 @@
 # Docs for the Azure Web Apps Deploy action: https://github.com/Azure/webapps-deploy
 # More GitHub Actions for Azure: https://github.com/Azure/actions
 
-name: Build and deploy Node.js app to Azure Web App - lugro
+name: Build and deploy Node.js app to Azure Web App - Lugro
 
 env:
   DATABASE_URL: '${{ secrets.ENV }}'
@@ -53,7 +53,7 @@ jobs:
         id: deploy-to-webapp
         uses: azure/webapps-deploy@v2
         with:
-          app-name: 'lugro'
+          app-name: 'Lugro'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_D4F1D0C0515A4F6DB14BE5D37F14C3B2 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_B983B824520C40D59E5008D859A51C4D }}
           package: .
