@@ -5,6 +5,11 @@ name: Build and deploy Node.js app to Azure Web App - Lugro
 
 env:
   DATABASE_URL: '${{ secrets.ENV }}'
+  NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY: ${{ env.CLERK }}
+  CLERK_SECRET_KEY: ${{ secrets.CLERK_PRIVATE }}
+  UPSTASH_REDIS_REST_URL: '${{ secrets.REDIS_URL }}'
+  UPSTASH_REDIS_REST_TOKEN: '${{ secrets.REDIS_TOKEN }}'
+
 
 on:
   push:
